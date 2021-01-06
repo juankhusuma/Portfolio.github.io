@@ -1,1 +1,171 @@
-<h1></h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juan Dharmananda Khusuma Portfolio">
+    <meta name="keywords" content="juan dharmananda Khusuma web design front end back end full stack development">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/programming (1).png" />
+    <title>Juan D.K | Portfolio</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1 class="brand header-anim" style="font-family: 'Alegreya Sans', sans-serif;">Juan D.K</h1>
+            <ul class="social ">
+                <li>
+                    <a href="https://www.instagram.com/juan.d.khusuma/" target="_blank" class="header-anim"><img src="./img/instagram.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/JuanKhusuma" target="_blank" class="header-anim"><img src="./img/twitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://dribbble.com/juan-d-khusuma" target="_blank" class="header-anim"><img src="./img/dribble.png" alt="Dribble"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div>
+                <img src="./img/hero-icon.png" alt="" class="hero-img">
+                <h1 class="hero-title">MEET JUAN D KHUSUMA</h1>
+                <h4 class="hero-subtitle">FULL STACK WEB DEVELOPER</h4>
+            </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- About -->
+    <section class="about">
+        <div class="wrapper">
+            <div class="about-content">
+                <div class="about-desc">
+                    <h1 class="about-title"><img src="./img/about-icon.png" class="about-icon">ABOUT ME</h1>
+                    <p class="about-subtitle">
+                        <div>My name is Juan Dharmananda Khusuma from Indonesia</div>
+                        <div>I’m a self-taught full stack web developer</div>
+                        <div>and I like to make stuff on the internet</div>
+                    </p>
+                </div>
+                <img src="./img/about-img.png" alt="" class="about-img">
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Skills -->
+    <section class="skills">
+        <div class="wrapper">
+            <div class="skills-content">
+                <div class="skills-desc">
+                    <h1 class="skills-title"><img src="./img/skills-icon.png" alt="" class="skills-icon">MY SKILLS</h1>
+                    <p>
+                        <div>Here’s all of the programming language and</div>
+                        <div>framework that I use</div>
+                    </p>
+                </div>
+                <img src="./img/skills-img.png" alt="" class="skills-img">
+            </div>
+        </div>
+    </section>
+    <!-- Skills End -->
+
+    <!-- Language -->
+    <section class="language">
+        <div class="wrapper">
+            <div class="language-content">
+                <div class="language-desc">
+                    <h1 class="language-title"><img src="./img/skills-icon.png" alt="" class="skills-icon">PROGRAMMING LANGUAGE</h1>
+                    <p class="language-subtitle">I can code with : Python, JavaScript, TypeScript, HTML5, CSS3, and SASS</p>
+                </div>
+                <img src="./img/languange-img.png" alt="" class="language-img">
+            </div>
+        </div>
+    </section>
+    <!-- Language End -->
+
+    <!-- Framework -->
+    <section class="framework">
+        <div class="wrapper">
+            <div class="framework-content">
+                <div class="framework-desc">
+                    <h1 class="framework-title"><img src="./img/skills-icon.png" alt="" class="skills-icon">FRAMEWORK</h1>
+                    <p class="framework-subtitle">The framework that I use are : React, Django, Django REST API, and Firebase</p>
+                </div>
+                <img src="./img/framework.png" alt="" class="framework-img">
+            </div>
+        </div>
+    </section>
+    <!-- Framework End -->
+
+    <!-- Contact -->
+    <section class="contact">
+        <div class="wrapper">
+            <div class="contact-content">
+                <div class="contact-desc">
+                    <h1 class="contact-title"><img src="./img/Email.png" alt="Email" class="contact-img">Contact Me</h1>
+                    <p class="contact-subtitle">Interested in what I do? Just send me a message</p>
+                </div>
+                <a href="mailto:juan.d.khusuma@gmail.com" class="send-email">SEND ME AN EMAIL</a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2020 Juan Dharmananda Khusuma • All Rights Reserved • Made With 💓 </p>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+
+    <script>
+        gsap.from('.header-anim', {
+            opacity: 0,
+            duration: 0.7,
+            y: -50,
+            ease: "Power2.easeInOut",
+            stagger: 0.3,
+        });
+
+        gsap.from('.hero-img', {
+            y: 30,
+            opacity: 0,
+            duration: 1,
+            delay: 0.7,
+            rotate: 45,
+            ease: "Power1.easeInOut"
+        });
+
+        gsap.from('.hero-title', {
+            y: 50,
+            opacity: 0,
+            duration: 0.7,
+            delay: 0.8,
+            ease: "Power2.easeInOut",
+        });
+
+        gsap.from('.hero-subtitle', {
+            y: -50,
+            opacity: 0,
+            duration: 0.7,
+            delay: 0.8,
+            ease: "Power2.easeInOut",
+        });
+    </script>
+</body>
+
+</html>
